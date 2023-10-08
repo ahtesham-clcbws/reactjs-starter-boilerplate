@@ -1,0 +1,82 @@
+{
+  "name": "starter-for-react",
+  "version": "1.0.0",
+  "description": "hey3's boilerplate for Web Frontend",
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "pnpm",
+    "boilerplate-template"
+  ],
+  "homepage": "https://github.com/hey3/starter-for-react#readme",
+  "bugs": {
+    "url": "https://github.com/hey3/starter-for-react/issues"
+  },
+  "license": "MIT",
+  "author": "hey3",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey3/starter-for-react.git"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "packageManager": "pnpm@8.8.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier . --check --ignore-unknown",
+    "format:fix": "prettier . --write --ignore-unknown",
+    "lint": "pnpm lint:eslint && pnpm lint:style",
+    "lint:fix": "pnpm lint:eslint-fix && pnpm lint:style-fix",
+    "lint:eslint": "eslint . --ext .js,.ts,.tsx",
+    "lint:eslint-fix": "eslint . --fix --ext .js,.ts,.tsx",
+    "lint:style": "stylelint 'src/**/*.css'",
+    "lint:style-fix": "stylelint --fix 'src/**/*.css'",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:virtual-update": "vitest run --update",
+    "typecheck": "tsc --project tsconfig.json --pretty --noEmit --incremental false"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.16.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "7.4.6",
+    "@storybook/addon-essentials": "7.4.6",
+    "@storybook/react": "7.4.6",
+    "@storybook/react-vite": "7.4.6",
+    "@testing-library/jest-dom": "6.1.3",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.5.1",
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.2.11",
+    "@typescript-eslint/eslint-plugin": "6.7.4",
+    "@typescript-eslint/parser": "6.7.4",
+    "@vitejs/plugin-react-swc": "3.4.0",
+    "eslint": "8.50.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-import": "2.28.1",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-storybook": "0.6.14",
+    "eslint-plugin-unused-imports": "3.0.0",
+    "jsdom": "22.1.0",
+    "prettier": "3.0.3",
+    "storybook": "7.4.6",
+    "stylelint": "15.10.3",
+    "stylelint-config-recess-order": "4.3.0",
+    "stylelint-config-standard": "34.0.0",
+    "typescript": "5.2.2",
+    "vite": "4.4.11",
+    "vitest": "0.34.6"
+  }
+}
